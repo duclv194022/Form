@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="407dp"
+        android:layout_height="744dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="3dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/editTextTextPersonName2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="Họ và tên"
+                app:layout_constraintEnd_toEndOf="@+id/editTextNumber"
+                app:layout_constraintStart_toStartOf="@+id/editTextNumber"
+                app:layout_constraintTop_toBottomOf="@+id/editTextNumber" />
+
+            <EditText
+                android:id="@+id/editTextTextPersonName4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="Quê quán"
+                app:layout_constraintEnd_toEndOf="@+id/editTextNumber3"
+                app:layout_constraintStart_toStartOf="@+id/editTextNumber3"
+                app:layout_constraintTop_toBottomOf="@+id/editTextNumber3" />
+
+            <EditText
+                android:id="@+id/editTextNumber"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="50dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="68dp"
+                android:ems="10"
+                android:inputType="number"
+                android:hint="MSSV"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/editTextNumber2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:inputType="number"
+                android:hint="Số CCCD"
+                app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName2"
+                app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName2"
+                app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
+
+            <EditText
+                android:id="@+id/editTextNumber3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:ems="10"
+                android:inputType="number"
+                android:hint="Số điện thoại"
+                app:layout_constraintEnd_toEndOf="@+id/editTextNumber2"
+                app:layout_constraintStart_toStartOf="@+id/editTextNumber2"
+                app:layout_constraintTop_toBottomOf="@+id/editTextNumber2" />
+
+            <EditText
+                android:id="@+id/editTextDate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:ems="10"
+                android:inputType="date"
+                android:hint="DD/MM/YYYY"
+                app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName4"
+                app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName4"
+                app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName4" />
+
+            <DatePicker
+                android:id="@+id/calendarView2"
+                android:layout_width="295dp"
+                android:layout_height="277dp"
+                android:layout_marginTop="24dp"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="@+id/editTextDate"
+                app:layout_constraintStart_toStartOf="@+id/editTextDate"
+                app:layout_constraintTop_toBottomOf="@+id/editTextDate" />
+
+            <EditText
+                android:id="@+id/editTextTextPersonName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="Nơi ở hiện tại"
+                app:layout_constraintEnd_toEndOf="@+id/editTextDate"
+                app:layout_constraintHorizontal_bias="0.494"
+                app:layout_constraintStart_toStartOf="@+id/editTextDate"
+                app:layout_constraintTop_toBottomOf="@+id/calendarView2" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
